@@ -1,0 +1,14 @@
+{
+  "name": "jest-test-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sum.js",
+  "scripts": {
+    "test": "node_modules/.bin/jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.0"
+  }
+}
