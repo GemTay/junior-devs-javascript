@@ -1,7 +1,6 @@
 {
   "name": "junior-devs-javascript",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "chai": "^4.2.0"
@@ -21,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/GemTay/junior-devs-javascript/issues"
   },
-  "homepage": "https://github.com/GemTay/junior-devs-javascript#readme"
+  "homepage": "https://github.com/GemTay/junior-devs-javascript#readme",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
