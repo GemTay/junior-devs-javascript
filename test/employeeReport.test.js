@@ -1,7 +1,7 @@
 const assert = require('chai').assert
 // const assert = chai.assert;
-
-// const calculator = require('../src/')
+// import EmployeeReport from '../employeeReport.js'
+const employeeReport = require('../employeeReport')
 
 const employees = [
     { name: 'Max', age: 17 },
