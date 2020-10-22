@@ -1,7 +1,5 @@
 const assert = require('chai').assert
-// const assert = chai.assert;
-
-// const calculator = require('../src/')
+const EmployeeReport = require('../src/employeeReport.js');
 
 const employees = [
     { name: 'Max', age: 17 },
@@ -13,6 +11,7 @@ const employees = [
 describe('employeeReport', function() {
   describe('with a list of employees', function() {
     it('should return everyone over 18', function() {
+        let employeeReport = new EmployeeReport();
         let result = employeeReport.getAllOver18(employees);
 
         assert.equal(['Sepp', 'Mike'], result);
