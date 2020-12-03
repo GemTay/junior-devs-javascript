@@ -6,6 +6,11 @@ class EmployeeReport {
         let employeeNamesOver18 = employeesOver18.map(e => e.name)
         return employeeNamesOver18;
     };
+
+    getAllOver18Alphabetical(employees) {
+        let result = this.getAllOver18(employees)
+        return result.sort((a,b) => a.localeCompare(b));
+    };
 }
 
 module.exports = EmployeeReport;

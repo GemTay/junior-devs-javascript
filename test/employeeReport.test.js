@@ -17,4 +17,12 @@ describe('employeeReport', function() {
         assert.deepEqual(['Sepp', 'Mike'], result);
     });
   });
+  describe('with a list of employees', function() {
+        it('should return everyone over 18 in alphabetical order', function() {
+            let employeeReport = new EmployeeReport();
+            let result = employeeReport.getAllOver18Alphabetical(employees);
+
+            assert.deepEqual(['Mike', 'Sepp'], result);
+        });
+  });
 });
