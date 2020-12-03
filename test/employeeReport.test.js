@@ -14,7 +14,7 @@ describe('employeeReport', function() {
         let employeeReport = new EmployeeReport();
         let result = employeeReport.getAllOver18(employees);
 
-        assert.equal(['Sepp', 'Mike'], result);
+        assert.deepEqual(['Sepp', 'Mike'], result);
     });
   });
 });
