@@ -25,4 +25,13 @@ describe('employeeReport', function() {
             assert.deepEqual(['Mike', 'Sepp'], result);
         });
   });
+
+  describe('with a list of employees', function() {
+    it('should capitalise and return names', function() {
+        let employeeReport = new EmployeeReport();
+        let result = employeeReport.getAllNamesCapilalized(employees) ;
+
+        assert.deepEqual(['MIKE', 'SEPP'], result);
+    });
+});
 });

@@ -11,6 +11,11 @@ class EmployeeReport {
         let result = this.getAllOver18(employees)
         return result.sort((a,b) => a.localeCompare(b));
     };
+
+    getAllNamesCapilalized(employees) {
+        let result = this.getAllOver18Alphabetical(employees)
+        return result.map(e => e.toUpperCase())
+    }
 }
 
 module.exports = EmployeeReport;
